@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Escuela de Fútbol</title>
+</head>
+<body>
+    <header>
+        <h1>Fútbol "Futbolistas del Futuro"</h1>
+        <nav>
+            <ul>
+                <li><a href="#horarios">Horarios</a></li>
+                <li><a href="#rutinas">Rutinas</a></li>
+                <li><a href="#maestros">Entrenadores</a></li>
+                <li><a href="#videos">Vídeos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="horarios">
+            <h2>Horarios de tu Rutina</h2>
+            <table>
+                <tr>
+                    <th>Día</th>
+                    <th>Hora</th>
+                </tr>
+                <tr>
+                    <td>Lunes</td>
+                    <td>17:00 - 18:30</td>
+                </tr>
+                <tr>
+                    <td>Martes</td>
+                    <td>17:00 - 18:30</td>
+                </tr>
+                <tr>
+                    <td>Miércoles</td>
+                    <td>17:00 - 18:30</td>
+                </tr>
+                <tr></tr>
+                    <td>Jueves</td>
+                    <td>17:00 - 18:30</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>17:00 - 18:30</td>
+                </tr>
+                <tr>
+                    <td>Sabado</td>
+                    <td>17:00 - 18:30</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="rutinas">
+            <h2>Rutinas de Entrenamiento</h2>
+            <ul>
+                <li>Calentamiento: 15 minutos</li>
+                <li>Ejercicios de técnica: 30 minutos</li>
+                <li>Enfriamiento: 15 minutos</li>
+            </ul>
+        </section>
+
+        <section id="maestros">
+            <h2>Perfiles de Entrenadores</h2>
+            <div class="perfil" onclick="mostrarInformacion('Cristian Herrera', 'Estudiante de la Unidad Educativa Antofagasta.', '42ab9159-da87-4923-abd6-8c313689d8ee.jpeg')">
+                <img src="42ab9159-da87-4923-abd6-8c313689d8ee.jpeg" alt="Cristian Herrera">
+                <h3>Cristian Herrera</h3>
+            </div>
+            <div class="perfil" onclick="mostrarInformacion('Luis Montes', 'Estudiante de la Unidad Educativa Antofagasta.', 'e03d249b-3398-4af0-a4f5-62dc4e4760ff.jpeg')">
+                <img src="e03d249b-3398-4af0-a4f5-62dc4e4760ff.jpeg" alt="Luis Montes">
+                <h3>Luis Montes</h3>
+            </div>
+            <!-- Agrega más perfiles aquí -->
+        </section>
+
+        <section id="videos">
+            <h2>Vídeos en TikTok de Cristian Herrera y Luis montes</h2>
+            <ul>
+                <li><a href="https://www.tiktok.com/@cristian107.a?_r=1&_d=e6g59badi992g4&sec_uid=MS4wLjABAAAABTtZp4vGWiausVuVGEW75Ez4jC6lVpGEnUKeIuzx9AnTjj2ZUusKrgJ-xncdl5cs&share_author_id=6932439092571931649&sharer_language=es&source=h5_m&u_code=dh7i17mfdmel1c&timestamp=1728649063&user_id=6932439092571931649&sec_user_id=MS4wLjABAAAABTtZp4vGWiausVuVGEW75Ez4jC6lVpGEnUKeIuzx9AnTjj2ZUusKrgJ-xncdl5cs&utm_source=whatsapp&utm_campaign=client_share&utm_medium=android&share_iid=7424118254736656133&share_link_id=e9f4cda6-6647-4baa-be45-7b6b76082dbd&share_app_id=1233&ugbiz_name=ACCOUNT&ug_btm=b8727%2Cb0229&social_share_type=5&enable_checksum=1" target="_blank">Cristian Herrera</a></li>
+                <li><a href="https://www.tiktok.com/@luis_montes_17?_r=1&_d=eb2mamg0fhmmd4&sec_uid=MS4wLjABAAAA_1RdekdBsWdumFv7kbM1CSDP1GzA4GzU9WRPnHer-wougz9gaAVJYVFrg9dpO_cR&share_author_id=6938404578216297478&sharer_language=es&source=h5_m&u_code=dhe118jf3dcgj9&timestamp=1728649107&user_id=6938404578216297478&sec_user_id=MS4wLjABAAAA_1RdekdBsWdumFv7kbM1CSDP1GzA4GzU9WRPnHer-wougz9gaAVJYVFrg9dpO_cR&utm_source=whatsapp&utm_campaign=client_share&utm_medium=android&share_iid=7422616943713027846&share_link_id=310107af-0a3e-4964-895c-290f794aa480&share_app_id=1233&ugbiz_name=ACCOUNT&ug_btm=b8727%2Cb0229&social_share_type=5&enable_checksum=1" target="_blank">Luis Montes</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Fútbol "Futbolistas del Futuro". </p>
+    </footer>
+
+    <div id="modal" class="modal" onclick="cerrarModal()">
+        <div class="modal-contenido" onclick="event.stopPropagation()">
+            <span id="cerrar" onclick="cerrarModal()">&times;</span>
+            <img id="modal-imagen" src="istockphoto-1440483244-612x612.jpg" alt="" />
+            <h2 id="nombre"></h2>
+            <p id="info"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

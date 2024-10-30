@@ -1,0 +1,136 @@
+body {
+    font-family: "poppins" , sans-serif;
+    }
+    
+    .header {
+        background-image: url(seleccion_boliviana.jpg);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    
+    .menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
+    }
+    
+    .logo {
+    
+        color: #FFFDFC;
+        font-size: 25px;
+        font-weight: 800;
+    
+    }
+    
+    .menu .navbar ul li {
+        position: relative;
+        float: left;
+    }
+    
+    .menu .navbar ul li a {
+        font-size: 18px;
+        padding: 20px;
+        color: #FFFDFC;
+        display: block;
+        font-weight: 600;
+    }
+    
+    .menu label {
+        cursor: pointer;
+        display: none;
+    }
+    
+    .header-txt {
+        text-align: center;
+    }
+    
+    .header-txt h1 {
+        color: #ffffff;
+        font-size: 30px;
+        padding: 0 250px;
+        margin-bottom: 45px;
+    }
+    
+    .general-content {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 55px;
+    }
+    
+    .general-1 {
+    background-image: url(cristian.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    padding: 170px 55px;
+    
+    }
+    
+    .general-2 {
+        background-image: url(lucho.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 450px;
+        padding: 170px 55px;
+    
+        }
+    
+        .general-3 {
+            background-image: url(descarga\ \(1\).jpeg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 450px;
+            padding: 170px 55px;
+                }
+                
+                circle-txt {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0% 10%;
+    }
+    
+    h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #13bb24;
+    }
+    
+    .txt h3 {
+        font-size: 18px;
+        color: #1a3ecd;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    
+    .txt p {
+    color: rgb(19, 241, 93);
+    font-size: 16px;
+    }
+
+    footer {
+        background-color: #4ca8af;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+
+    
+    
